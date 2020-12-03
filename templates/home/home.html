@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %} 
+{% block homeactive %} active {% endblock homeactive %} 
+{% block body %}
+<div class="container my-3">
+  <div class="jumbotron jumbotron-fluid">
+    <h1 class="display-5 text-center">Hello, Welcome to LocBiz!</h1>
+    <p class="lead text-center my-1">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p class="my-2 text-center">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <div class="text-center">
+      <a class="btn btn-primary btn-lg" href="/blog" role="button">Learn more</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<h2>Popular Blogposts:</h2>
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-2 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured Post</h3>
+          <div class="mb-1 text-muted">May 13, 2020</div>
+          <p class="card-text mb-auto">This is just a random testing blog</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+      </div>
+</div>
+{% endblock body %}
